@@ -13,6 +13,7 @@
     <title>Travel agency</title>
 </head>
     <body class="page">
+        <div class="hero__wrapper">
         <header class="header">
             <div class="container header__container">
                 <a href="#" class="logo">
@@ -24,7 +25,7 @@
                         <use href="./images/sprite.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <nav class="navigation">
+                <!-- <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item"><a class="navigation__link navigation__link--active" href=""></a>Home
                         </li>
@@ -38,9 +39,11 @@
                         <li class="navigation__item-btn"><button class="navigation__btn" type="button">Login</button></li>
                         <li class="navigation__item-btn"><button class="navigation__btn" type="button">Sign up</button></li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
+        </header>
             <!--Hero-->
+            
             <section class="section hero__section">
                 <div class="container hero__container">
                     <h1 class="hero__title">Start your unforgettable<br>journey with us.</h1>
@@ -66,8 +69,8 @@
                     </form>
                 </div>
             </section>
-        </header>
-    
+    </div>
+    <main>
         <!--Popular Destinations-->
         <section class="section">
             <div class="container">
@@ -77,61 +80,54 @@
                         wonders.</p>
     
                 </div>
-                <ul class="destinations__list">
-                    <li class="destinations__item">
-                        <a href="" class="destinations__link">
-                            <picture>
-                                <source
-                                    srcset="./images/berlin_1920.jpeg 1x, ./images/berlin_1920@2x.jpeg 2x, ./images/berlin_1920@3x.jpeg"
-                                    media="(min-width:320px)" type="image/jpeg" />
-                                <img src="./images/berlin_1920.jpeg" alt="Monument of Berlin" class="destinations__img">
-                            </picture>
-    
-    
-                            <p class="destinations__img-text">Monument of Berlin</p>
-                            <a href="" class="destinations__location">Berlin, Germany</a>
-                        </a>
-                    </li>
-                    <li class="destinations__item">
-                        <a href="" class="destinations__link">
-                            <picture>
-                                <source
-                                    srcset="./images/london_1920.jpeg 1x, ./images/london_1920@2x.jpeg 2x, ./images/london_1920@3x.jpeg"
-                                    media="(min-width:320px)" type="image/jpeg" />
-                                <img src="./images/london_1920.jpeg" alt="Monument of Berlin" class="destinations__img">
-                            </picture>
+                <ul class="slider">
+                    <li class="slider__item">
+                
+                                   <img srcset="./images/berlin_1920.jpeg 1x, ./images/berlin_1920@2x.jpeg 2x, ./images/berlin_1920@3x.jpeg"
+                                     type="image/jpeg" 
+                                     src="./images/berlin_1920.jpeg" alt="Monument of Berlin" class="destinations__img"/>
+                               
+                             <div class="destinations__text-inner">
+                             <p class="destinations__img-text">Monument of Berlin</p>
+                            <a href="" class="destinations__link">Berlin, Germany</a>
+                        </div>
+                        </li>
+                    <li class="slider__item">
+
+                                   <img srcset="./images/london_1920.jpeg 1x, ./images/london_1920@2x.jpeg 2x, ./images/london_1920@3x.jpeg 3x"
+                                     type="image/jpeg" 
+                                     src="./images/london_1920.jpeg" alt="Monument of Berlin" class="destinations__img"/>
+                       
+                            <div class="destinations__text-inner">
                             <p class="destinations__img-text">Millennium Bridge</p>
-                            <a href="url?country=UK" class="destinations__location">London, United Kingdom</a>
-                        </a>
-                    </li>
-                    <li class="destinations__item">
-                        <a href="" class="destinations__link">
-                            <picture>
-                                <source
-                                    srcset="./images/lisbon_1920.jpeg 1x, ./images/lisbon_1920@2x.jpeg 2x, ./images/lisbon_1920@3x.jpeg"
-                                    media="(min-width:320px)" type="image/jpeg" />
-                                <img src="./images/lisbon_1920.jpeg" alt="Monument of Berlin" class="destinations__img">
-                            </picture>
+                            <a href="url?country=UK" class="destinations__link">London, United Kingdom</a>
+                        </div>
+                        </li>
+                    <li class="slider__item">
+                                   <img srcset="./images/lisbon_1920.jpeg 1x, ./images/lisbon_1920@2x.jpeg 2x, ./images/lisbon_1920@3x.jpeg"
+                                     type="image/jpeg"
+                                     src="./images/lisbon_1920.jpeg" alt="Monument of Berlin" class="destinations__img" />
+                                               
+                            <div class="destinations__text-inner">
                             <p class="destinations__img-text">Rialto Bridge</p>
-                            <a href="" class="destinations__location">Venice, Italy</a>
-                        </a>
-                    </li>
-                    <li class="destinations__item">
-                        <a href="" class="destinations__link">
-                            <picture>
-                                <source
-                                    srcset="./images/venice_1920.jpeg 1x, ./images/venice_1920@2x.jpeg 2x, ./images/venice_1920@3x.jpeg"
-                                    media="(min-width:320px)" type="image/jpeg" />
-                                <img src="./images/venice_1920.jpeg" alt="Monument of Berlin" class="destinations__img">
-                            </picture>
+                            <a href="" class="destinations__link">Venice, Italy</a>
+                        </div>
+                        </li>
+                    <li class="slider__item">
+            
+                                   <img srcset="./images/venice_1920.jpeg 1x, ./images/venice_1920@2x.jpeg 2x, ./images/venice_1920@3x.jpeg"
+                                     type="image/jpeg"
+                                     src="./images/venice_1920.jpeg" alt="Monument of Berlin" class="destinations__img" />
+                                          
+                            <div class="destinations__text-inner">
                             <p class="destinations__img-text">Sea of Orange Tiles</p>
-                            <a href="" class="destinations__location">Lisbon, Portugal</a>
-                        </a>
-                    </li>
+                            <a href="" class="destinations__link">Lisbon, Portugal</a>
+                        </div>
+                        </li>
                 </ul>
             </div>
-            <div class="toggle">
-                <button type="button" class="toggle__btn">
+            <!-- <div class="toggle"> -->
+                <!-- <button type="button" class="toggle__btn">
                     <svg class="toggle__btn-icon" width="20" height="10">
                         <use href="./images/sprite.svg#icon-toggle_left"></use>
                     </svg>
@@ -140,73 +136,91 @@
                     <svg class="toggle__btn-icon">
                         <use href="./images/sprite.svg#icon-toggle_right"></use>
                     </svg>
-                </button>
-            </div>
+                </button> -->
+            <!-- </div> -->
         </section>
         <!--Special Offer-->
         <section class="section">
             <div class="container">
                 <h2 class="section__title">Special Offer</h2>
                 <p class="section__text">Check out our special offer and discounts</p>
-                <div class="toggle">
+                <!-- <div class="toggle">
                     <button type="button" class="toggle__btn">left</button>
                     <button type="button" class="toggle__btn">right</button>
-                </div>
+                </div> -->
                 <ul class="special-offer">
                     <li class="special-offer__item">
     
                         <article class="special-offer__card">
-                            <img src="" alt="" class="special-offer__img">
-                            <h3 class="special-offer__title">Lisbon, Portugal</h3>
+                            <img src="./images/lisabon.jpg" alt="lisabon" class="special-offer__img">
+                    
+                            <div class="special-offer__card-text">
+                            <h3 class="special-offer__title">Lisbon, Portugal
+                            <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
+                            
                             <p class="special-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
                                 included. Very popular during the renaissance. Passage and
                                 going through the cites of the world in classical literature.</p>
-                            <div class="divspecial-offer__price-blok"></div>
+                            <div class="divspecial-offer__price-blok">
                             <p class="divspecial-offer__price-caption">From</p>
                             <p class="divspecial-offer__price">€500</p>
+                          </div>
                             <a href="" class="special-offer__link">Details</a>
+                            
+                            </div>
                         </article>
     
                     </li>
                     <li class="special-offer__item">
     
                         <article class="special-offer__card">
-                            <img src="" alt="" class="special-offer__img">
-                            <h3 class="special-offer__title">Athens, Greece</h3>
+                            <img src="./images/greece.jpg" alt="Athens, Greece" class="special-offer__img">
+                            <div class="special-offer__card-text">
+                            <h3 class="special-offer__title">Athens, Greece 
+                            <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
                             <p class="special-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
                                 included. Very popular during the renaissance. Passage and
                                 going through the cites of the world in classical literature.</p>
+                                <div class="divspecial-offer__price-blok">
                             <p class="divspecial-offer__price-caption">From</p>
                             <p class="divspecial-offer__price">€800</p>
+                            </div>
                             <a href="" class="special-offer__link">Details</a>
+                            </div>
                         </article>
     
                     </li>
                     <li class="special-offer__item">
-    
                         <article class="special-offer__card">
-                            <img src="" alt="" class="special-offer__img">
-                            <h3 class="special-offer__title">Rome, Italy</h3>
+                            <img src="./images/rome.jpg" alt="Rome, Italy" class="special-offer__img">
+                            <div class="special-offer__card-text">
+                            <h3 class="special-offer__title">Rome, Italy 
+                            <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
                             <p class="special-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
                                 included. Very popular during the renaissance. Passage and
                                 going through the cites of the world in classical literature.</p>
+                                <div class="divspecial-offer__price-blok">
                             <p class="divspecial-offer__price-caption">From</p>
                             <p class="divspecial-offer__price">€750</p>
+                            </div>
                             <a href="" class="special-offer__link">Details</a>
+                            </div>
                         </article>
     
                     </li>
                 </ul>
             </div>
         </section>
+        </main>
         <!-- Blog-->
         <section class="section">
             <div class="container">
                 <h2 class="section__title">Our Blog</h2>
                 <p class="section__text">An insight the incredible experience in the world</p>
                 <article class="blog">
-                    <img src="" alt="" class="blog__img">
-                    <h3 class="blog__title">Beautiful Italy <br> Let’s travel</h3>
+                    <img src="./images/img_blog.jpg" alt="Beautiful Italy" class="blog__img">
+                    <h3 class="blog__title">Beautiful Italy <br> Let’s travel 
+                    <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
                     <p class="blog__text">But I must explain to you how all this mistaken idea of denouncing pleasure and
                         praising pain was born and I will give
                         you a complete account of the system and expound the actual teachings of the great explorer of the
@@ -231,7 +245,7 @@
                 <ul class="trip-plan">
                     <li class="trip-plan__item">
                         <a href="" class="trip-plan__link">
-                            <img src="" alt="" class="trip-plan__img">
+                            <img src="./images/trip_item1.jpg" alt="" class="trip-plan__img">
                             <p class="trip-plan__text">Guided Tour</p>
                             <p class="trip-plan__price">€99/Day</p>
                             <p class="trip-plan__title">Paris City Tour</p>
@@ -240,7 +254,7 @@
                     </li>
                     <li class="trip-plan__item">
                         <a href="" class="trip-plan__link">
-                            <img src="" alt="" class="trip-plan__img">
+                            <img src="./images/trip_item2.jpg" alt="" class="trip-plan__img">
                             <p class="trip-plan__text">Guided Tour</p>
                             <p class="trip-plan__price">€99/Day</p>
                             <p class="trip-plan__title">Paris City Tour</p>
@@ -249,7 +263,7 @@
                     </li>
                     <li class="trip-plan__item">
                         <a href="" class="trip-plan__link">
-                            <img src="" alt="" class="trip-plan__img">
+                            <img src="./images/trip_item3.jpg" alt="" class="trip-plan__img">
                             <p class="trip-plan__text">Guided Tour</p>
                             <p class="trip-plan__price">€99/Day</p>
                             <p class="trip-plan__title">Paris City Tour</p>
@@ -258,7 +272,7 @@
                     </li>
                     <li class="trip-plan__item">
                         <a href="" class="trip-plan__link">
-                            <img src="" alt="" class="trip-plan__img">
+                            <img src="./images/trip_item4.jpg" alt="" class="trip-plan__img">
                             <p class="trip-plan__text">Guided Tour</p>
                             <p class="trip-plan__price">€99/Day</p>
                             <p class="trip-plan__title">Paris City Tour</p>
@@ -278,10 +292,10 @@
                     <button type="button" class="toggle__btn">right</button>
                 </div>
                 <ul class="travel-gallery">
-                    <li class="travel-gallery__item"><img src="" alt="" class="travel-gallery__img"></li>
-                    <li class="travel-gallery__item"><img src="" alt="" class="travel-gallery__img"></li>
-                    <li class="travel-gallery__item"><img src="" alt="" class="travel-gallery__img"></li>
-                    <li class="travel-gallery__item"><img src="" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item"><img src="./images/img_gallery1.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item"><img src="./images/img_gallery2.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item"><img src="./images/img_gallery3.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item"><img src="./images/img_gallery4.jpg" alt="" class="travel-gallery__img"></li>
                 </ul>
             </div>
         </section>
@@ -294,11 +308,10 @@
                     <li class="feedback__item">
                         <picture>
                             <source
-                                srcset="./images/avatar-mobile.jpg 1x, ./images/avatar-mobile@2x.jpg 2x, ./images/avatar-mobile@3x.jpg"
+                                srcset="./images/avatar.jpg 1x, ./images/avatar@2x.jpg 2x, ./images/avatar@3x.jpg 
                                 media="(min-width:320px)" type="image/jpg" />
-                            <img src="./images/avatar-mobile.jpg" alt="" class="feedback__img">
+                            <img src="./images/avatar.jpg" alt="John Doe" class="feedback__img">
                         </picture>
-                        <img src="" alt="" class="feedback__img">
                         <p class="feedback__text">But I must explain to you how all this mistaken idea of denouncing
                             pleasure and praising pain was born and I will give
                             you a complete account of the system and expound the actual teachings of the great explorer of
@@ -308,7 +321,17 @@
                         <p class="feedback__text">Accountant</p>
                     </li>
                     <li class="feedback__item">
-                        <img src="" alt="" class="feedback__img">
+                        <!-- <picture>
+                            <source srcset="./images/avatar_smith.jpg.jpg 1x, ./images/avatar_smith@2x.jpg 2x, ./images/avatar_smith@3x.jpg 3x,
+                                   media="(min-width:320px)" type="image/jpg" />
+                            <img src="./images/avatar_smith.jpg" alt="John Smith" class="feedback__img">
+                        </picture> -->
+                        <picture>
+                            <source srcset="./images/avatar_smith.jpg 1x, ./images/avatar_smith@2x.jpg 2x, ./images/avatar_smith@3x.jpg 3x, 
+                            media="(min-width:320px)" type="image/jpg"/>
+                            <img src="./images/avatar_smith.jpg" alt="Journalist, John Smith">
+                        </picture>
+                        
                         <p class="feedback__text">But I must explain to you how all this mistaken idea of denouncing
                             pleasure and praising pain was born and I will give
                             you a complete account of the system and expound the actual teachings of the great explorer of
@@ -318,7 +341,11 @@
                         <p class="feedback__text">Journalist, HWO News</p>
                     </li>
                     <li class="feedback__item">
-                        <img src="" alt="" class="feedback__img">
+                        <picture>
+                            <source srcset="./images/avatar_bellis.jpg 1x, ./images/avatar_bellis@2x.jpg 2x, ./images/avatar_bellis@3x.jpg 3x,
+                                                                                media="(min-width:320px)" type="image/jpg"" />
+                            <img src="./images/avatar_bellis.jpg" alt="Tamara Bellis" class="feedback__img">
+                        </picture>
                         <p class="feedback__text">But I must explain to you how all this mistaken idea of denouncing
                             pleasure and praising pain was born and I will give
                             you a complete account of the system and expound the actual teachings of the great explorer of
@@ -415,6 +442,8 @@
                 </div>
             </section>
         </footer>
-    
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./slick.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
