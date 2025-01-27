@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Rubik:wght@300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="./style.css">
     <title>Travel agency</title>
 </head>
@@ -151,9 +152,10 @@
                 <ul class="special-offer">
                     <li class="special-offer__item">
     
-                        <article class="special-offer__card">
-                            <img src="./images/lisabon.jpg" alt="lisabon" class="special-offer__img">
-                    
+                    <article class="special-offer__card">
+                    <img srcset="./images/lisabon.jpg 1x, ./images/lisabon2@2x.jpg 2x, ./images/lisabon3@3x.jpg 3x"
+                        type="image/jpg" src="./images/lisabon.jpg" alt="Lisabon" class="special-offer__img" />
+                        
                             <div class="special-offer__card-text">
                             <h3 class="special-offer__title">Lisbon, Portugal
                             <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
@@ -174,7 +176,8 @@
                     <li class="special-offer__item">
     
                         <article class="special-offer__card">
-                            <img src="./images/greece.jpg" alt="Athens, Greece" class="special-offer__img">
+                            <img srcset="./images/greece.jpg 1x, ./images/greece@2x.jpg 2x, ./images/greece@3x.jpg 3x,"
+                             type="image/jpg" src="./images/greece.jpg" alt="Athens, Greece" class="special-offer__img">
                             <div class="special-offer__card-text">
                             <h3 class="special-offer__title">Athens, Greece 
                             <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
@@ -192,7 +195,8 @@
                     </li>
                     <li class="special-offer__item">
                         <article class="special-offer__card">
-                            <img src="./images/rome.jpg" alt="Rome, Italy" class="special-offer__img">
+                            <img srcset="./images/rome.jpg 1x, ./images/rome@2x.jpg 2x, ./images/rome@3x.jpg 3x,"
+                            type="image/jpg" src="./images/rome.jpg" alt="Rome, Italy" class="special-offer__img">
                             <div class="special-offer__card-text">
                             <h3 class="special-offer__title">Rome, Italy 
                             <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
@@ -218,9 +222,9 @@
                 <h2 class="section__title">Our Blog</h2>
                 <p class="section__text">An insight the incredible experience in the world</p>
                 <article class="blog">
-                    <img src="./images/img_blog.jpg" alt="Beautiful Italy" class="blog__img">
-                    <h3 class="blog__title">Beautiful Italy <br> Let’s travel 
-                    <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
+                    <img srcset="./images/img_blog.jpg 1x, ./images/img_blog@2x.jpg 2x, ./images/img_blog@3x.jpg 3x"
+                    type="image/jpg" src="./images/img_blog.jpg" alt="Beautiful Italy" class="blog__img" >
+                    <h3 class="blog__title">Beautiful Italy <br> Let’s travel</h3>
                     <p class="blog__text">But I must explain to you how all this mistaken idea of denouncing pleasure and
                         praising pain was born and I will give
                         you a complete account of the system and expound the actual teachings of the great explorer of the
@@ -230,7 +234,11 @@
                         who do not know how to pursue pleasure rationally encounter consequences that are extremly painful.
                         Nor again is there
                         anyone who loves or pursues.</p>
-                    <a href="" class="blog__link">Read More</a>
+                    <a href="" class="blog__link">Read More
+                    <svg class="blog__link-svg">
+                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                    </a>
                 </article>
             </div>
         </section>
@@ -380,12 +388,14 @@
         <!--Footer-->
         <footer>
             <section class="section section--footer">
-                <div class="container">
+                <div class="container container__footer">
+                    <div class="footer__wrapper">
                     <a href="#" class="logo footer-logo">
                         <svg class="logo__icon footer-logo-icon" width="234" height="45">
                             <use href="./images/sprite.svg#icon-logo"></use>
                         </svg> </a>
                     <p class="footer__text">Copyright © Travellian 2020 All rights reserved</p>
+                    </div>
                     <div class="footer__wrapper">
                         <h3 class="footer__title">Menu</h3>
                         <ul class="footer__list">
@@ -411,7 +421,7 @@
                         <ul class="footer__list">
                             <li class="footer__item"><a class="footer__link" href="#"></a>+123 456 789</li>
                             <li class="footer__item"><a class="footer__link" href="#"></a>info@travellian.com</li>
-                            <li class="footer__item"><a class="footer__link" href="#"></a>T1245, New Yourk, USA</li>
+                            <li class="footer__item"><a class="footer__link" href="#"></a>1245, New Yourk, USA</li>
                         </ul>
                     </div>
                     <div>
@@ -420,22 +430,22 @@
                             <li class="footer__item--social-networks"><a class="footer__link--social-networks"
                                     href="https://www.facebook.com/?locale=uk_UA" target="_blank"><svg
                                         class="footer__social-icon" width="32" height="32">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                     </svg></a></li>
                             <li class="footer__item--social-networks"><a class="footer__link--social-networks"
                                     href="https://www.pinterest.com/pinterestua/" target="_blank"><svg
                                         class="footer__social-icon" width="32" height="32">
-                                        <use href="./images/sprite.svg#icon-pinterest"></use>
+                                        <use href="./images/symbol-defs.svg#icon-pinterest"></use>
                                     </svg></a></li>
                             <li class="footer__item--social-networks"><a class="footer__link--social-networks"
                                     href="https://www.instagram.com/" target="_blank"><svg class="footer__social-icon"
                                         width="32" height="32">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                     </svg></a></li>
                             <li class="footer__item--social-networks"><a class="footer__link--social-networks"
                                     href="https://x.com/?lang=uk" target="_blank"><svg class="footer__social-icon"
                                         width="32" height="32">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                     </svg></a></li>
                         </ul>
                     </div>
