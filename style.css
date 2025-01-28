@@ -206,7 +206,7 @@ height: auto;
     line-height: 1.16;
 
     color: #767E86;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .destinations__img--inner{
    position: relative;
@@ -258,13 +258,13 @@ color: #FFFFFF;
 .slick-slider.slick-dotted {}
 
 /* Обмежувальна оболонка */
-.slick-list {
+.slider .slick-list {
     overflow: hidden;
     margin-bottom: 100px;
 }
 
 /* Стрічка слайдів */
-.slick-track {
+.slider .slick-track {
     display: flex;
 }
 
@@ -304,6 +304,7 @@ color: #FFFFFF;
 /* Конкретний слфйдер */
 .slider {
     position: relative;
+    
 }
 /* Стрілка */
 .slader .slick-arrow {
@@ -312,7 +313,7 @@ color: #FFFFFF;
     z-index: 10;
 }
 /* Стрілка вліво */
-.slick-prev.slick-arrow{
+.slider .slick-arrow.slick-prev{
     position: absolute;
     width: 60px;
     height: 66px;
@@ -320,26 +321,37 @@ color: #FFFFFF;
     left: 60px;
     font-size: 0;
    
-    background-image: url(./images/symbol-defs.svg#icon-arrow-rigth);
+    background-image: url("./images/arrow-left-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-color:#000000;
     border: transparent;
     border-radius: 12px;
 }
 
 /* Стрілка вправо */
-.slick-arrow.slick-next {
+.slider .slick-arrow.slick-next {
+   
     position: absolute;
     width: 60px;
     height: 66px;
     bottom: -166px;
     right: 60px;
+    
     font-size: 0 ;
-    background: url(./images/sprite.svg#icon-toggle_right);
+   
+    background: url("./images/arrow-rigth.svg" );
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-color: #FF7757;
+
     border: transparent;
     border-radius: 12px;
 } 
+
+
 /* Section special offer */
+
 .special-offer__title{
     font-family: 'Mulish'; 
     font-style: normal;
@@ -491,6 +503,79 @@ color: #FFFFFF;
     margin-left: 20px;
  }
 
+
+
+/* Destination Gallery section */
+
+.travel-gallery {
+    position: relative;
+}
+.travel-gallery .slick-track :not(:last-child){
+    margin-bottom: 32px;
+}
+.travel-gallery .slick-track {
+    display: block;
+}
+
+.travel-gallery__item.slick-slide {
+   
+    
+    
+    overflow: hidden;
+}
+.travel-gallery__img{
+    width: 288px;
+    height: 320px;
+    border-radius: 26px;
+}
+.travel-gallery .slick-list {
+    overflow: hidden;
+    margin-bottom: 100px;
+
+}
+
+/* Стрілка вправо */
+.travel-gallery .slick-arrow.slick-next {
+
+    position: absolute;
+    width: 60px;
+    height: 66px;
+    bottom: -166px;
+    right: 60px;
+
+    font-size: 0;
+
+    background: url("./images/arrow-rigth.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #FF7757;
+
+    border: transparent;
+    border-radius: 12px;
+}
+
+/* Стрілка вліво */
+.travel-gallery .slick-arrow.slick-prev {
+    position: absolute;
+    width: 60px;
+    height: 66px;
+    bottom: -166px;
+    left: 60px;
+    font-size: 0;
+
+    background-image: url("./images/arrow-left-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #000000;
+    border: transparent;
+    border-radius: 12px;
+}
+
+
+
+
+
+
  /* Footer */
  .section--footer{
         background: #172432;
@@ -567,3 +652,5 @@ background-color: #FFFFFF;
 .footer__social-icon:hover{
 fill:#172432
 }
+
+

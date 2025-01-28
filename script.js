@@ -6,5 +6,16 @@ $(document).ready(function(){
 		
 	}
 	);
+	
 });
 
+$(document).ready(function () {
+	$('.travel-gallery').slick({
+		arrows:true,
+		adaptiveHeight:true,
+		slidesToShow: 3,
+		infinite: true,
+		vertical: true,
+		verticalSwiping:true,
+		})
+})

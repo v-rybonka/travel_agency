@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Rubik:wght@300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    
     <link rel="stylesheet" href="./style.css">
     <title>Travel agency</title>
 </head>
@@ -295,15 +295,23 @@
             <div class="container">
                 <h2 class="section__title">Destination Gallery</h2>
                 <p class="section__text">Our photo gallery on trip</p>
-                <div class="toggle">
+                <!-- <div class="toggle">
                     <button type="button" class="toggle__btn">left</button>
                     <button type="button" class="toggle__btn">right</button>
-                </div>
+                </div> -->
                 <ul class="travel-gallery">
-                    <li class="travel-gallery__item"><img src="./images/img_gallery1.jpg" alt="" class="travel-gallery__img"></li>
-                    <li class="travel-gallery__item"><img src="./images/img_gallery2.jpg" alt="" class="travel-gallery__img"></li>
-                    <li class="travel-gallery__item"><img src="./images/img_gallery3.jpg" alt="" class="travel-gallery__img"></li>
-                    <li class="travel-gallery__item"><img src="./images/img_gallery4.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery1.jpg 1x, ./images/img_gallery1@2x.jpg 2x, ./images/img_gallery1@3x.jpg 3x,"
+                        type="image/jpg" src="./images/img_gallery1.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery2.jpg 1x, ./images/img_gallery2@2x.jpg 2x, ./images/img_gallery2@3x.jpg 3x,"
+                        type="image/jpg" src="./images/img_gallery2.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery3.jpg 1x, ./images/img_gallery3@2x.jpg 2x, ./images/img_gallery3@3x.jpg 3x,"
+                        type="image/jpg" src="./images/img_gallery3.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery4.jpg 1x, ./images/img_gallery4@2x.jpg 2x, ./images/img_gallery4@3x.jpg 3x,"
+                        type="image/jpg" src="./images/img_gallery4.jpg" alt="" class="travel-gallery__img"></li>
                 </ul>
             </div>
         </section>
@@ -316,7 +324,7 @@
                     <li class="feedback__item">
                         <picture>
                             <source
-                                srcset="./images/avatar.jpg 1x, ./images/avatar@2x.jpg 2x, ./images/avatar@3x.jpg 
+                                srcset="./images/avatar.jpg 1x, ./images/avatar@2x.jpg 2x, ./images/avatar@3x.jpg 3x,
                                 media="(min-width:320px)" type="image/jpg" />
                             <img src="./images/avatar.jpg" alt="John Doe" class="feedback__img">
                         </picture>
