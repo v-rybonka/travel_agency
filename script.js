@@ -16,6 +16,6 @@ $(document).ready(function () {
 		slidesToShow: 3,
 		infinite: true,
 		vertical: true,
-		verticalSwiping:true,
+		
 		})
 })

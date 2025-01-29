@@ -18,8 +18,11 @@ max-width: 100%;
 height: auto;
 }
 .container{
+   width: 320px;
+   margin: auto;
     padding-left: 16px;
     padding-right: 16px;
+   
 }
 .container.header__container {
     display: flex;
@@ -540,7 +543,7 @@ color: #FFFFFF;
     position: absolute;
     width: 60px;
     height: 66px;
-    bottom: -166px;
+    bottom: -130px;
     right: 60px;
 
     font-size: 0;
@@ -559,7 +562,7 @@ color: #FFFFFF;
     position: absolute;
     width: 60px;
     height: 66px;
-    bottom: -166px;
+    bottom: -130px;
     left: 60px;
     font-size: 0;
 
@@ -571,6 +574,52 @@ color: #FFFFFF;
     border-radius: 12px;
 }
 
+
+/* Section Traveler’s Experiences */
+
+
+.feedback__item{
+position: relative;
+    width: 288px;
+    height: 466px;
+    padding: 60px 20px 32px;
+
+    background: #F5F6F7;
+    border-radius: 12px;
+}
+
+.feedback__text{
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    
+    color: #767E86;
+    
+}
+
+.feedback__title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+      
+    color: #767E86;
+}
+
+.feedback__img{
+    position: absolute;
+    top:-15%;
+    border-radius: 50%;
+
+}
+.feedback__img-star{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
 
