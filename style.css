@@ -12,6 +12,7 @@ ul {
     padding-left: 0px;
     margin: 0px;
 }
+
 img {
 display: block;
 max-width: 100%;
@@ -255,6 +256,9 @@ color: #FFFFFF;
 }
 
 /* Slider  */
+.slider{
+    position: relative;
+}
 /* Обмежувальна оболонка */
 .slider .slick-list {
     overflow: hidden;
@@ -533,6 +537,120 @@ color: #FFFFFF;
 }
 
 
+/* Trip Planners section */
+
+
+
+.trip-plan .trip-plan__item:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.section__text.section__text--smaller-indent{
+margin-bottom: 48px;
+
+}
+.trip-plan__wrapper-button{
+    position: relative;
+    width: 288px;
+   
+    margin-bottom: 96px;
+    
+}
+.trip-plan__button--black-square{
+    display: block;
+    position: absolute;
+    bottom:60%;
+    width: 43px;
+    height: 43px;
+    background-color: #000000;
+}
+.trip-plan__button--gray-square {
+    display: block;
+    position: absolute;
+    bottom: -23%;
+    right: 22%;
+    width: 43px;
+    height: 43px;
+    background-color:#767E86;
+}
+
+.trip-plan__button{
+    display: block;
+    position: relative;
+    width: 186px;
+    padding: 20px;
+    margin-left: 16px;
+  
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    
+    color: #FFFFFF;
+    background: #FF7757;
+    border-radius: 12px;
+    z-index: 3;
+    
+}
+.trip-plan__link{
+    text-decoration: none;
+}
+
+.trip-plan__img{
+    width: 288px;
+    height: 320px;
+    border-radius: 26px;
+}
+
+.trip-plan__text--wrapper{
+    display: flex;
+    justify-content:space-between
+}
+
+.trip-plan__card{
+    padding: 20px 0px;
+    gap: 12px;
+}
+.trip-plan__card .trip-plan__text--wrapper{
+margin-bottom: 12px;
+}
+
+.trip-plan__text{
+   display: inline-block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    
+    color: #172432;
+}
+
+.trip-plan__text.trip-plan__text--uppercase{
+    text-transform: uppercase;
+}
+
+
+.trip-plan__title {
+    
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.3;
+    
+    color: #172432;
+    margin-bottom: 12px;
+    
+}
+
+
+
+
+
 /* Section Traveler’s Experiences */
 
 
@@ -579,8 +697,10 @@ position: relative;
     margin-bottom: 20px;
 }
 
+
+
+
 /* Newsletter section */
-/* Our Newsletter */
 
 .section--without-padding{
       
