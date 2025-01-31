@@ -19,3 +19,12 @@ $(document).ready(function () {
 		
 		})
 })
+
+
+const swiper = new Swiper('.feedback-swiper', {
+	// Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

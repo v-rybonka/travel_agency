@@ -653,15 +653,25 @@ margin-bottom: 12px;
 
 /* Section Traveler’s Experiences */
 
+.feedback-swiper.swiper {
+    width: 288px;
+    min-height: 300px;
+    /* overflow: visible; */
+    padding-top: 21%;
+    overflow-x: hidden;
+    margin-bottom: 100px;
+}
 
-.feedback__item{
-position: relative;
+
+.feedback__item.swiper-slide{
+   position: relative;
     width: 288px;
     height: 466px;
     padding: 60px 20px 32px;
 
     background: #F5F6F7;
     border-radius: 12px;
+    
 }
 
 .feedback__text{
@@ -688,18 +698,52 @@ position: relative;
 
 .feedback__img{
     position: absolute;
-    top:-15%;
+    top:-13%;
     border-radius: 50%;
+   
 
 }
 .feedback__img-star{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.toggle{
+    position: relative;
+   
+    width: 288px;
+    height: 66px;
+}
+.toggle__btn.swiper-button-prev{
+    position: absolute;
+        width: 60px;
+        height: 66px;
 
+        left: 60px;
+        /* padding: 20px 28px; */
+       
+        color: #FFFFFF;
+        background-color: #FF7757;
+    
+        border: transparent;
+        border-radius: 12px;
+}
+.swiper-button-next:after,.swiper-button-prev:after{
+    font-size: 26px;
 
-
-
+      
+}
+.toggle__btn.swiper-button-next{
+    position: absolute;
+        width: 60px;
+        height: 66px;
+       
+        right: 60px;
+        color: #FFFFFF;
+        background-color: #000000;
+    
+        border: transparent;
+        border-radius: 12px;
+}
 /* Newsletter section */
 
 .section--without-padding{
