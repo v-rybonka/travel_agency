@@ -28,3 +28,11 @@ const swiper = new Swiper('.feedback-swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiperTripSection = new Swiper('.offer-swiper', {
+		// Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})

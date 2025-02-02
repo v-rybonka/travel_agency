@@ -315,6 +315,10 @@ color: #FFFFFF;
 
 /* Section special offer */
 
+.offer-swiper.swiper{
+margin-bottom: 60px;
+}
+
 .special-offer__title{
     font-family: 'Mulish'; 
     font-style: normal;
@@ -659,7 +663,7 @@ margin-bottom: 12px;
     /* overflow: visible; */
     padding-top: 21%;
     overflow-x: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 
@@ -717,7 +721,8 @@ margin-bottom: 12px;
     position: absolute;
         width: 60px;
         height: 66px;
-
+        margin-top: 0px;
+        top: 0px;
         left: 60px;
         /* padding: 20px 28px; */
        
@@ -736,7 +741,8 @@ margin-bottom: 12px;
     position: absolute;
         width: 60px;
         height: 66px;
-       
+        margin-top: 0px;
+        top:0px;
         right: 60px;
         color: #FFFFFF;
         background-color: #000000;

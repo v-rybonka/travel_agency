@@ -145,12 +145,10 @@
             <div class="container">
                 <h2 class="section__title">Special Offer</h2>
                 <p class="section__text">Check out our special offer and discounts</p>
-                <!-- <div class="toggle">
-                    <button type="button" class="toggle__btn">left</button>
-                    <button type="button" class="toggle__btn">right</button>
-                </div> -->
-                <ul class="special-offer">
-                    <li class="special-offer__item">
+            
+                <div class="offer-swiper swiper">
+                <ul class="special-offer swiper-wrapper">
+                    <li class="special-offer__item swiper-slide">
     
                     <article class="special-offer__card">
                     <img srcset="./images/lisabon.jpg 1x, ./images/lisabon2@2x.jpg 2x, ./images/lisabon3@3x.jpg 3x"
@@ -173,7 +171,7 @@
                         </article>
     
                     </li>
-                    <li class="special-offer__item">
+                    <li class="special-offer__item swiper-slide">
     
                         <article class="special-offer__card">
                             <img srcset="./images/greece.jpg 1x, ./images/greece@2x.jpg 2x, ./images/greece@3x.jpg 3x,"
@@ -193,7 +191,7 @@
                         </article>
     
                     </li>
-                    <li class="special-offer__item">
+                    <li class="special-offer__item swiper-slide">
                         <article class="special-offer__card">
                             <img srcset="./images/rome.jpg 1x, ./images/rome@2x.jpg 2x, ./images/rome@3x.jpg 3x,"
                             type="image/jpg" src="./images/rome.jpg" alt="Rome, Italy" class="special-offer__img">
@@ -213,6 +211,11 @@
     
                     </li>
                 </ul>
+                </div>
+                <div class="toggle">
+                    <button class="toggle__btn swiper-button-prev"></button>
+                    <button class="toggle__btn swiper-button-next"></button>
+                </div>
             </div>
         </section>
         </main>
@@ -254,7 +257,7 @@
                 <a href="" class="trip-plan__button">View all trip plans</a>
                  <div class="trip-plan__button--gray-square"></div>
                 </div>
-
+            <div class="trip-plan-swiper">
                 <ul class="trip-plan">
                     <li class="trip-plan__item">
                         <a href="" class="trip-plan__link">
@@ -327,6 +330,7 @@
                         </a>
                     </li>
                 </ul>
+                </div>
             </div>
         </section>
         <!--Destination Gallery-->
