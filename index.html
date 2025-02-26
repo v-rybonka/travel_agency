@@ -50,18 +50,31 @@
                     <h1 class="hero__title">Start your unforgettable<br>journey with us.</h1>
                     <p class="hero__text">The best travel for your jouney begins now</p>
                     <form action="#" class="hero__form">
+                        <div class="hero__form--wrapper">
+                            <div class="hero__form--text-wrapper">
                         <label for="destination" class="hero__form-label">Destination</label>
                         <input type="text" class="hero__form-text" id="destination" placeholder="Dubai">
+                        </div>
+                        <div class="hero__form--text-wrap">
                         <label for="person" class="hero__form-label">Person</label>
                         <select name="person" id="person" class="hero__form-text hero__form-text--short-border">
                             <option value="2" selected>2</option>
                             <option value="4">4</option>
                             <option value="6">6</option>
                         </select>
+                        </div>
+                        </div>
+                        <div class="hero__form--wrapper">
+                            <div class="hero__form--text-wrapper">
                         <label for="check-in" class="hero__form-label">Check in</label>
                         <input type="date" class="hero__form-text" id="check-in">
+                        </div>
+                        <div>
                         <label for="check-out" class="hero__form-label">Check out</label>
                         <input type="date" class="hero__form-text hero__form-text--backdown" id="check-out">
+                        </div>
+                        </div>
+
                         <button type="submit" class="hero__form-btn">Book Now
                             <svg class="hero__form-btn-icon">
                                 <use href="./images/sprite.svg#icon-vector"></use>
@@ -77,74 +90,67 @@
             <div class="container">
                 <h2 class="section__title">Popular Destinations</h2>
                 <div class="section__inner">
-                    <p class="section__text">Most popular destinations around the world, from historical places to natural
-                        wonders.</p>
+                    <p class="section__text">Most popular destinations around the world, from historical places
+                    to natural wonders.</p>
     
                 </div>
+                <div class="slider__wripper">
                 <ul class="slider">
                     <li class="slider__item">
-                
+                <div class="destinations__img--wripper">
                                    <img srcset="./images/berlin_1920.jpeg 1x, ./images/berlin_1920@2x.jpeg 2x, ./images/berlin_1920@3x.jpeg"
                                      type="image/jpeg" 
                                      src="./images/berlin_1920.jpeg" alt="Monument of Berlin" class="destinations__img"/>
-                               
+                            </div>
                              <div class="destinations__text-inner">
                              <p class="destinations__img-text">Monument of Berlin</p>
                             <a href="" class="destinations__link">Berlin, Germany</a>
                         </div>
                         </li>
                     <li class="slider__item">
-
+                <div class="destinations__img--wripper">
                                    <img srcset="./images/london_1920.jpeg 1x, ./images/london_1920@2x.jpeg 2x, ./images/london_1920@3x.jpeg 3x"
                                      type="image/jpeg" 
                                      src="./images/london_1920.jpeg" alt="Monument of Berlin" class="destinations__img"/>
-                       
+                    </div>
                             <div class="destinations__text-inner">
                             <p class="destinations__img-text">Millennium Bridge</p>
                             <a href="url?country=UK" class="destinations__link">London, United Kingdom</a>
                         </div>
                         </li>
                     <li class="slider__item">
+                        <div class="destinations__img--wripper">
                                    <img srcset="./images/lisbon_1920.jpeg 1x, ./images/lisbon_1920@2x.jpeg 2x, ./images/lisbon_1920@3x.jpeg"
                                      type="image/jpeg"
                                      src="./images/lisbon_1920.jpeg" alt="Monument of Berlin" class="destinations__img" />
-                                               
+                                            </div>
                             <div class="destinations__text-inner">
                             <p class="destinations__img-text">Rialto Bridge</p>
                             <a href="" class="destinations__link">Venice, Italy</a>
                         </div>
                         </li>
                     <li class="slider__item">
-            
+                            <div class="destinations__img--wripper">
                                    <img srcset="./images/venice_1920.jpeg 1x, ./images/venice_1920@2x.jpeg 2x, ./images/venice_1920@3x.jpeg"
                                      type="image/jpeg"
                                      src="./images/venice_1920.jpeg" alt="Monument of Berlin" class="destinations__img" />
-                                          
+                                        </div>
                             <div class="destinations__text-inner">
                             <p class="destinations__img-text">Sea of Orange Tiles</p>
                             <a href="" class="destinations__link">Lisbon, Portugal</a>
                         </div>
                         </li>
                 </ul>
+                <div class="slider__toggle"> 
+                </div>
+                </div>
             </div>
-            <!-- <div class="toggle"> -->
-                <!-- <button type="button" class="toggle__btn">
-                    <svg class="toggle__btn-icon" width="20" height="10">
-                        <use href="./images/sprite.svg#icon-toggle_left"></use>
-                    </svg>
-                </button>
-                <button type="button" class="toggle__btn">
-                    <svg class="toggle__btn-icon">
-                        <use href="./images/sprite.svg#icon-toggle_right"></use>
-                    </svg>
-                </button> -->
-            <!-- </div> -->
         </section>
         <!--Special Offer-->
         <section class="section">
             <div class="container">
-                <h2 class="section__title">Special Offer</h2>
-                <p class="section__text">Check out our special offer and discounts</p>
+                <h2 class="section__title section__title--short-underline">Special Offer</h2>
+                <p class="section__text section__text--text-align-right">Check out our special offer and discounts</p>
             
                 <div class="offer-swiper swiper">
                 <ul class="special-offer swiper-wrapper">
@@ -155,38 +161,41 @@
                         type="image/jpg" src="./images/lisabon.jpg" alt="Lisabon" class="special-offer__img" />
                         
                             <div class="special-offer__card-text">
-                            <h3 class="special-offer__title">Lisbon, Portugal
-                            <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
-                            
+                           <div>
+                            <h3 class="special-offer__title">Lisbon, Portugal</h3>
+                            <img class="special-offer__card-img" src="./images/star.svg" alt="star"> 
+                            </div>
                             <p class="special-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
                                 included. Very popular during the renaissance. Passage and
                                 going through the cites of the world in classical literature.</p>
-                            <div class="divspecial-offer__price-blok">
-                            <p class="divspecial-offer__price-caption">From</p>
-                            <p class="divspecial-offer__price">€500</p>
-                          </div>
+                            <div class="special-offer__price-blok">
+                            <p class="special-offer__price-caption">From</p>
+                            <p class="special-offer__price">€500</p>
                             <a href="" class="special-offer__link">Details</a>
-                            
+                            </div>
                             </div>
                         </article>
     
                     </li>
                     <li class="special-offer__item swiper-slide">
-    
                         <article class="special-offer__card">
                             <img srcset="./images/greece.jpg 1x, ./images/greece@2x.jpg 2x, ./images/greece@3x.jpg 3x,"
                              type="image/jpg" src="./images/greece.jpg" alt="Athens, Greece" class="special-offer__img">
                             <div class="special-offer__card-text">
-                            <h3 class="special-offer__title">Athens, Greece 
-                            <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
+                                <div>
+                            <h3 class="special-offer__title">Athens, Greece </h3>
+                            <img class="special-offer__card-img" src="./images/star.svg" alt="star">
+                            </div>
                             <p class="special-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
                                 included. Very popular during the renaissance. Passage and
                                 going through the cites of the world in classical literature.</p>
-                                <div class="divspecial-offer__price-blok">
-                            <p class="divspecial-offer__price-caption">From</p>
-                            <p class="divspecial-offer__price">€800</p>
-                            </div>
+                                <div class="special-offer__price-blok">
+                                    
+                            <p class="special-offer__price-caption">From</p>
+                            <p class="special-offer__price">€800</p>
+                              
                             <a href="" class="special-offer__link">Details</a>
+                            </div>
                             </div>
                         </article>
     
@@ -196,19 +205,21 @@
                             <img srcset="./images/rome.jpg 1x, ./images/rome@2x.jpg 2x, ./images/rome@3x.jpg 3x,"
                             type="image/jpg" src="./images/rome.jpg" alt="Rome, Italy" class="special-offer__img">
                             <div class="special-offer__card-text">
-                            <h3 class="special-offer__title">Rome, Italy 
-                            <span><img class="special-offer__card-img" src="./images/star.svg" alt="star"></span> </h3>
+                                <div>
+                            <h3 class="special-offer__title">Rome, Italy </h3>
+                            <img class="special-offer__card-img" src="./images/star.svg" alt="star">
+                            </div>
                             <p class="special-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
                                 included. Very popular during the renaissance. Passage and
                                 going through the cites of the world in classical literature.</p>
-                                <div class="divspecial-offer__price-blok">
-                            <p class="divspecial-offer__price-caption">From</p>
-                            <p class="divspecial-offer__price">€750</p>
-                            </div>
+                                <div class="special-offer__price-blok">  
+                            
+                            <p class="special-offer__price-caption">From</p>
+                            <p class="special-offer__price">€750</p>
                             <a href="" class="special-offer__link">Details</a>
                             </div>
+                            </div>
                         </article>
-    
                     </li>
                 </ul>
                 </div>
@@ -227,6 +238,7 @@
                 <article class="blog">
                     <img srcset="./images/img_blog.jpg 1x, ./images/img_blog@2x.jpg 2x, ./images/img_blog@3x.jpg 3x"
                     type="image/jpg" src="./images/img_blog.jpg" alt="Beautiful Italy" class="blog__img" >
+                     <div>
                     <h3 class="blog__title">Beautiful Italy <br> Let’s travel</h3>
                     <p class="blog__text">But I must explain to you how all this mistaken idea of denouncing pleasure and
                         praising pain was born and I will give
@@ -242,12 +254,14 @@
                         <use href="./images/symbol-defs.svg#icon-arrow"></use>
                     </svg>
                     </a>
+                    </div>
                 </article>
             </div>
         </section>
         <!--Trip Planners-->
         <section class="section">
-            <div class="container">
+            <div class="container trip-plan__container">
+                <div class="section__text-wrapper">
                 <h2 class="section__title">Trip Planners</h2>
                 <p class="section__text section__text--smaller-indent">20 years from now you will be more disappointed by the things that you didn’t do.
                     Stop regretting and start travelling,
@@ -257,9 +271,10 @@
                 <a href="" class="trip-plan__button">View all trip plans</a>
                  <div class="trip-plan__button--gray-square"></div>
                 </div>
-            <div class="trip-plan-swiper">
-                <ul class="trip-plan">
-                    <li class="trip-plan__item">
+                </div>
+            <div class="trip-plan-swiper swiper">
+                <ul class="trip-plan swiper-wrapper">
+                    <li class="trip-plan__item swiper-slide">
                         <a href="" class="trip-plan__link">
                             <img srcset="./images/trip_item1.jpg 1x, ./images/trip_item1@2x.jpg 2x, ./images/trip_item1@3x.jpg 3x" 
                             type="image/jpg" src="./images/trip_item1.jpg" alt="Paris" class="trip-plan__img">
@@ -277,7 +292,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="trip-plan__item">
+                    <li class="trip-plan__item swiper-slide">
                         <a href="" class="trip-plan__link">
                             <img srcset="./images/trip_item2.jpg 1x, ./images/trip_item2@2x.jpg 2x, ./images/trip_item2@3x.jpg 3x" 
                             type="image/jpg" src="./images/trip_item2.jpg" alt="Rome City" class="trip-plan__img">
@@ -295,7 +310,7 @@
                     </div>
                         </a>
                     </li>
-                    <li class="trip-plan__item">
+                    <li class="trip-plan__item swiper-slide">
                         <a href="" class="trip-plan__link">
                             <img srcset="./images/trip_item3.jpg 1x, ./images/trip_item3@2x.jpg 2x, ./images/trip_item3@3x.jpg 3x" 
                             type="image/jpg" src="./images/trip_item3.jpg" alt="Barcelona City" class="trip-plan__img">
@@ -312,7 +327,7 @@
                         </div>
                         </a>
                     </li>
-                    <li class="trip-plan__item">
+                    <li class="trip-plan__item swiper-slide">
                         <a href="" class="trip-plan__link">
                             <img srcset="./images/trip_item4.jpg 1x, ./images/trip_item4@2x.jpg 2x, ./images/trip_item4@3x.jpg 3x" 
                             type="image/jpg" src="./images/trip_item4.jpg" alt="Budapest City" class="trip-plan__img">
@@ -338,10 +353,7 @@
             <div class="container">
                 <h2 class="section__title">Destination Gallery</h2>
                 <p class="section__text">Our photo gallery on trip</p>
-                <!-- <div class="toggle">
-                    <button type="button" class="toggle__btn">left</button>
-                    <button type="button" class="toggle__btn">right</button>
-                </div> -->
+            <div class="travel-gallery--wrapper">
                 <ul class="travel-gallery">
                     <li class="travel-gallery__item">
                         <img srcset="./images/img_gallery1.jpg 1x, ./images/img_gallery1@2x.jpg 2x, ./images/img_gallery1@3x.jpg 3x,"
@@ -355,11 +367,29 @@
                     <li class="travel-gallery__item">
                         <img srcset="./images/img_gallery4.jpg 1x, ./images/img_gallery4@2x.jpg 2x, ./images/img_gallery4@3x.jpg 3x,"
                         type="image/jpg" src="./images/img_gallery4.jpg" alt="" class="travel-gallery__img"></li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery1.jpg 1x, ./images/img_gallery1@2x.jpg 2x, ./images/img_gallery1@3x.jpg 3x,"
+                            type="image/jpg" src="./images/img_gallery1.jpg" alt="" class="travel-gallery__img">
+                    </li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery2.jpg 1x, ./images/img_gallery2@2x.jpg 2x, ./images/img_gallery2@3x.jpg 3x,"
+                            type="image/jpg" src="./images/img_gallery2.jpg" alt="" class="travel-gallery__img">
+                    </li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery3.jpg 1x, ./images/img_gallery3@2x.jpg 2x, ./images/img_gallery3@3x.jpg 3x,"
+                            type="image/jpg" src="./images/img_gallery3.jpg" alt="" class="travel-gallery__img">
+                    </li>
+                    <li class="travel-gallery__item">
+                        <img srcset="./images/img_gallery4.jpg 1x, ./images/img_gallery4@2x.jpg 2x, ./images/img_gallery4@3x.jpg 3x,"
+                            type="image/jpg" src="./images/img_gallery4.jpg" alt="" class="travel-gallery__img">
+                    </li>
                 </ul>
+               <div class="travel-gallery__toggle"></div>
+            </div>
             </div>
         </section>
         <!--Traveler’s Experiences-->
-        <section class="section">
+        <section class="section sectioin--larger-padding">
             <div class="container">
                 <h2 class="section__title">Traveler’s Experiences</h2>
                 <p class="section__text">Here some awesome feedback from our travelers</p>
@@ -407,6 +437,7 @@
                         <p class="feedback__title">Tamara Bellis</p>
                         <p class="feedback__text">Managing Director, JTH</p>
                         </li>
+                        
                     </ul>
                 </div>
                      <div class="toggle">
@@ -416,18 +447,22 @@
             </div>
         </section>
         <!--Newsletter-->
-        <div class="container ">
-        <section class="section section--without-padding">
-                <h2 class="section__title-newsletter">Our Newsletter</h2>
+       
+        <section class="section section--without-padding ">
+            <div class="container ">
                 <form action="#" class="newsletter__form">
+                    <h2 class="section__title-newsletter">Our Newsletter</h2>
+                    <div>
                     <label for="email" class="newsletter__form--label">Email</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email"
                         class="newsletter__form--input">
-    
-                    <input type="submit" name="Subscribe" value="Subscribe" class="newsletter__form--button">
-                </form>
+                    <button type="submit" name="Subscribe" value="Subscribe" class="newsletter__form--button">Subscribe</button>
+                    
             </div>
+                </form>
+                </div>
         </section>
+        
         </main>
     
     
